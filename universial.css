@@ -1,0 +1,70 @@
+body {
+    background-color: #0B0C10;
+    margin: 0;   
+}
+
+.textFormat {
+    color: #C5C6C7;
+    font-family: monospace;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+}
+
+/*How to center images take from https://www.w3schools.com/howto/howto_css_image_center.asp*/
+.centerImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+/*End content from https://www.w3schools.com/howto/howto_css_image_center.asp*/
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*Nav Bar Formatting*/
+/*How to format many parts of nav bar taken from https://www.w3schools.com/howto/howto_js_topnav.asp*/
+.topnav {
+    background-color: #323c46;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    box-shadow
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    text-align: center;
+    padding: 5px 16px;
+    text-decoration: none;
+    
+    font-size: 17px;
+    color: #C5C6C7;
+    font-family: monospace;
+    font-weight: normal;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #C5C6C7;
+  color: #323c46;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #C5C6C7;
+  color: #323c46;
+}
+/*End content for navbar taken from https://www.w3schools.com/howto/howto_js_topnav.asp*/

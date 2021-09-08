@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!--
+    Name: Andrew Brain
+    Pawprint: amb5cb
+    Date: February 9, 2021
+    Challenge: Tables S21
+
+    References: 
+        1.https://www.google.com/url?sa=i&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3APython-logo-notext.svg&psig=AOvVaw1iZjRewgTlbigMVIL9ua4u&ust=1613002204965000&source=images&cd=vfe&ved=0CA0QjhxqFwoTCMCGo82D3u4CFQAAAAAdAAAAABAD
+        2.https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.logo.wine%2Flogo%2FPostgreSQL&psig=AOvVaw1usask2TKjprvZ1weAXgL2&ust=1613309900890000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPDsnfL95u4CFQAAAAAdAAAAABAD
+-->
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" 
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+              crossorigin="anonymous">
+        
+
+        <link rel="stylesheet" href="../universial.css">
+        <link rel="stylesheet" href="amb5cbTablesS21.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+        <title>Courses</title>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="topnav clearfix">
+                <a href="../Amb5cbPortfolio/Amb5cbPortfolioS21.html"><h2>Andrew Brain</h2></a>
+                <a href="../amb5cbColumns/amb5cbColumnsS21.html"><h2>Skills</h2></a>
+                <a class="active" href="amb5cbTablesS21.html"><h2>Courses</h2></a>
+                <a href="../amb5cbFlexBox/amb5cbFlexBoxS21.html"><h2>Projects</h2></a>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div id="tableContainer" class="center">
+                <table class="textFormat table">
+                  <thead>
+                      <tr>
+                        <th scope="col" colspan="7" id="mainTableHeader" class="text-center">Brain Courses</th>
+                      </tr>
+                      <tr>
+                        <th scope="col" colspan="2"><img src="amb5cbTablesS21MuTiger.png" alt="Mizzou Logo" id="mascotImage" class="text-center"></th>
+                        <th scope="col" colspan="5" id="institution" class="text-center">University of Missouri</th>
+                      </tr>
+                      <tr>
+                        <th scope="col" class="tableColumnHeaders">Department</th>
+                        <th scope="col" class="tableColumnHeaders">Course</th>
+                          <th scope="col" class="tableColumnHeaders" id="courseNum">Course Number</th>
+                        <th scope="col" class="tableColumnHeaders">Description</th>
+                        <th scope="col" class="tableColumnHeaders">Professor</th>
+                        <th scope="col" class="tableColumnHeaders">Grade</th>
+                        <th scope="col" class="tableColumnHeaders">Units</th>
+                      </tr>
+                  </thead>
+                  <tbody>  
+                    <tr>
+                        <td rowspan="5" id="compSciRow" class="align-middle">Computer Science</td>
+                        <td>Computer Organization and Assembly Language</td>
+                        <td>CS 3280</td>
+                        <td>Introduces computer architectures, programming concepts including parameter passing, I/O, interrupt handling, DMA, memory systems, cache, and virtual memory.</td>
+                        <td>Michael Jurczyk</td>
+                        <td>N/A</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Web Dev 1</td>
+                        <td>CS 2830</td>
+                        <td>This course will attempt to provide a comprehensive understanding of the evolution, the technologies, and the tools of the Internet. In particular, issues pertaining to the World Wide Web and Multimedia (HTML, CGI, Web based applications) will be discussed in detail.</td>
+                        <td>Nick Wergeles</td>
+                        <td>N/A</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Alogrithm Design 1</td>
+                        <td>CS 1050</td>
+                        <td>This course provides experience in developing algorithms, designing, implementing programs. Topics include syntax/semantics, flow control, loops, recursion, I/O, arrays, strings and pointers.</td>               
+                        <td>Jim Ries</td>             
+                        <td>A</td>             
+                        <td>4</td>           
+                    </tr>
+                    <tr>
+                        <td>Alogrithm Design 2</td>
+                        <td>CS 2050</td>
+                        <td>A study of fundamental techniques and algorithms for representing and manipulating data structures. Topics include data abstraction, recursion, stacks, queues, linked lists, trees, efficient methods of sorting and searching, and Big-O analysis.</td>               
+                        <td>Jeffrey Uhlmann</td>             
+                        <td>A</td>             
+                        <td>4</td>           
+                    </tr>
+                    <tr>
+                        <td>Advanced Algorithm Design</td>
+                        <td>CS 3050</td>
+                        <td>This class surveys fundamental algorithms and data structures that have wide practical applicability, including search trees and graph algorithms. Emphasis is placed on techniques for efficient implementation and good software development methodologies.</td>               
+                        <td>Dong Xu</td>             
+                        <td>N/A</td>             
+                        <td>3</td>           
+                    </tr>
+                    <tr>
+                        <td id="statsRow" class="align-middle">Statitics</td>
+                        <td>Introduction to Mathematical Statistics</td>
+                        <td>STAT 4710</td>
+                        <td>Introduction to theory of probability and statistics using concepts and methods of calculus.</td>               
+                        <td>Shih-Kang Chao</td>             
+                        <td>N/A</td>             
+                        <td>3</td>           
+                    </tr>
+                    <tr>
+                        <td id="mathRow" class="align-middle">Mathematics</td>
+                        <td>Discrete Mathematics</td>
+                        <td>MATH 2320</td>
+                        <td>Sets, functions, logic, relations, induction, recursion, counting techniques, graphs, trees, algorithms. Math Reasoning Proficiency course.</td>               
+                        <td>Petros Valettas</td>             
+                        <td>A</td>             
+                        <td>3</td>           
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+            <div class="container textFormat clearfix" id="cardContainer">
+<!--                
+                4% -> margin(left 2%, right 2%)
+            +  29.33% -> content width
+        __________________
+              33.33%
+-->
+                <div class="card cardFormat">
+                    <div id="imgContainer1">
+                        <img class="card-img-top" src="amb5cbTablesS21Card1Image.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title textFormat cardHeader">Andrew Brain</h5>
+                        <p class="card-text cardText textFormat firstCardText">Sophomore in Computer Science with 57 credit hours</p>
+                        <p class="card-text cardText textFormat firstCardText">Email: amb5cb@umsystem.edu</p>
+                    </div>
+                </div>
+<!--                
+                4% ->    margin(left 2%, right 2%)
+            +  29.33% -> content width
+        __________________
+              33.33%
+-->
+                <div class="card cardFormat">
+                    <h5 class="card-title cardHeader" id="langHeader">Favorite Project Languages</h5>
+                    <hr>
+                    <ul id="langList">
+                        <li>Python</li>
+                        <li>PostGresQL</li>
+                        <li>JupyterLabs</li>
+                    </ul>
+                    <div id="logoWrapper">
+<!--                        Python logo take from https://www.google.com/url?sa=i&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3APython-logo-notext.svg&psig=AOvVaw1iZjRewgTlbigMVIL9ua4u&ust=1613002204965000&source=images&cd=vfe&ved=0CA0QjhxqFwoTCMCGo82D3u4CFQAAAAAdAAAAABAD -->
+                        <img id="pythonLogo"  src="amb5cbTablesS21PythonLogo.svg.png" alt="python logo">
+<!--                        End python logo content-->
+<!--                        Post gres log taken from https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.logo.wine%2Flogo%2FPostgreSQL&psig=AOvVaw1usask2TKjprvZ1weAXgL2&ust=1613309900890000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPDsnfL95u4CFQAAAAAdAAAAABAD-->
+                        <img id="postGresLogo"  src="amb5cbTablesS21PostGresLogo.svg" alt="python logo">
+<!--                        End content for Post Gres logo-->
+                    </div>
+                </div>
+<!--                
+                4% -> margin(left 2%, right 2%)
+            +  29.33% -> content width
+        __________________
+              33.33%
+-->
+                <div class="card cardFormat">
+                    <img class="card-img-top" id="augurLogo" src="amb5cbTablesS21AugurLogo.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title textFormat cardHeader" id="augurHeader">Favorite Project</h5>
+                        <p class="card-text cardText textFormat augurParagraphText">I work on a research group called augur. We do research on open source software communities, using things like the GitHub API to collect the data for organizations on GitHub and GitLab.</p>
+                        <p class="card-text cardText textFormat augurParagraphText">My favorite project working for Augur was developing a set of community reports which helps open source community managers analyze their open source community performance, so they can attract more contributors in the future. </p>
+                    </div>
+                </div>
+            </div>
+            <h4 id="updatedDate" class="textFormat">Updated: February 13, 2020</h4>
+        </div>
+    </body>
+</html>

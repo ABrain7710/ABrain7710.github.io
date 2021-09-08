@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--
+    Name: Andrew Brain
+    Pawprint: amb5cb
+    Date: February 1, 2021
+    Challenge: Multi-Column Layout S21
+
+    References: 
+        1.https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_nested
+-->
+<html lang="en">
+    <head>
+        <title>Skills</title>
+        <meta charset="utf-8">
+        
+        <link rel="stylesheet" href="../universial.css">
+        <link rel="stylesheet" href="amb5cbColumnsS21.css">
+    </head>
+    <body>
+        <div class="topnav clearfix">
+            <a href="../amb5cbPortfolio/Amb5cbPortfolioS21.html"><h2>Andrew Brain</h2></a>
+            <a class="active" href="../amb5cbColumns/amb5cbColumnsS21.html"><h2>Skills</h2></a>
+            <a href="../amb5cbTables/amb5cbTablesS21.html"><h2>Courses</h2></a>
+            <a href="../amb5cbFlexBox/amb5cbFlexBoxS21.html"><h2>Projects</h2></a>
+        </div>
+        <!-- Main wrapper. This div should wrap all columns, row wrapper, and title header -->
+        <div id="mainWrapper" class="clearfix center box">
+            <h1 id="header" class="textFormat">Skills</h1>
+            <!-- Left Column -->
+            <!-- Put left column physical width calculations here: 
+                 42px -> margin(21px right, 21px left)
+                 12px -> border(6px right, 6px left)
+                 42px -> padding(21px right, 21px left)
+             +  244px -> content width
+            ____________
+                340px -> physical width
+            -->
+            <div class="column leftAndRightColumn textFormat" id="leftColumn">
+                <h2>Courses</h2>
+                <hr>
+                <ul class="list">
+                    <li>Advanced Algorithm Design</li>
+                    <li>Web Development 1</li>
+                    <li>Assembly Language and Computer Architecture</li>
+                </ul>
+            </div>
+            
+            <!-- Row Wrapper. This div will contain two rows -->
+            <!--Put middle column physical width calculations here:
+                 42px -> margin(21px right, 21px left)
+             +  435px -> content width
+            ______________
+                477px
+            -->
+            <div class="column textFormat" id="rowWrapper">
+                <div id="middleColumnTopRow">
+                    <h2>Work Experience</h2>
+                    <hr>
+<!--                    How to create nested list from https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_nested-->
+                    <ul class="list">
+                        <li>Undergraduate Researcher in the Computer Science Department at the University of Missouri - Columbia 
+                            <ul>
+                                <li>March 2020 - Present</li>
+                                <li>Developed APIs</li>
+                                <li>Built data collection worker</li>
+                                <li>Gained Experience working with a team</li>
+                            </ul>
+                        </li>
+                    </ul>
+<!--                    End content from https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_nested-->
+                </div>
+                <div id="middleColumnBottomRow" class="textFormat">
+                    <h2>Other</h2>
+                    <hr>
+                    <ul class="list">
+                        <li>Member of the Missouri Computing Association</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Right Column -->
+            <!--Put right column physical width calculations here: 
+               1122px -> Main Wrapper width
+                340px -> Left Column Physical Width
+                477px -> Middle Column Physical Width
+            -___________
+                305px -> Right Column Physical Width
+
+                305px -> Right Column Physical Width
+                 42px -> Right column margin(21px right, 21px left)
+                 12px -> Right column border(6px right, 6px left)
+                 42px -> Right column padding(21px right, 21px left)
+            -__________
+                209px -> Right Column content width
+            -->
+            <div class="column leftAndRightColumn textFormat" id="rightColumn">
+                <h2>Education</h2>
+                <hr>
+<!--                How to create nested list from https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_nested-->
+                <ul class="list">
+                    <li>Graduated from West Plains Middle School
+                        <ul>
+                            <li>GPA: 4.0</li>
+                        </ul>
+                    </li>
+                    <li>Graduated from West Plains High School
+                        <ul>
+                            <li>Weighted GPA:4.32</li>
+                            <li>GPA: 4.0</li>
+                        </ul>
+                    </li>
+                    <li>Pursuing Bachelor's Degree in Computer Science
+                        <ul>
+                            <li>GPA: 4.0</li>
+                            <li>Graduation Date: May 2023</li>
+                        </ul>
+                    </li>
+                </ul>
+<!--                End content from https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_nested-->
+            </div>
+        </div>
+        <h2 class="textFormat" id="updatedDate">Last Updated by Andrew Brain with amb5cb at: February 5, 2021</h2>
+    </body>
+</html>

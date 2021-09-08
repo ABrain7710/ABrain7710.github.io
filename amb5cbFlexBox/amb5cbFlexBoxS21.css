@@ -1,0 +1,101 @@
+/*
+    Name: Andrew Brain
+    Pawprint: amb5cb
+    Date: February 1, 2021
+    Challenge: Multi-Column Layout S21
+
+Refereneces
+    1.https://fonts.google.com/specimen/Share+Tech+Mono?category=Monospace&preview.layout=row&preview.text_type=custom&sidebar.open=true&selection.family=Share+Tech+Mono
+    2.https://www.peachpit.com/articles/article.aspx?p=672150&seqNum=5
+    3.https://www.w3schools.com/cssref/pr_text_text-decoration.asp
+    4.https://www.geeksforgeeks.org/how-to-auto-resize-an-image-to-fit-a-div-container-using-css/
+*/
+
+/*Add font type to classes items specified in unversial.css*/
+
+/*Share Tech Mono taken from https://fonts.google.com/specimen/Share+Tech+Mono?category=Monospace&preview.layout=row&preview.text_type=custom&sidebar.open=true&selection.family=Share+Tech+Mono*/
+.textFormat {
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.topnav a {
+    font-family: 'Share Tech Mono', monospace;
+}
+/*End content from https://fonts.google.com/specimen/Share+Tech+Mono?category=Monospace&preview.layout=row&preview.text_type=custom&sidebar.open=true&selection.family=Share+Tech+Mono*/
+
+#mainContainer {
+    width: 90%;
+    position: relative;
+    margin-top: 131px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    
+    animation: moveCards 2s;
+    animation-fill-mode: both;
+}
+
+.cardContainer {
+    width: 450px;
+    height: 530px; 
+    background-color: #494c59; 
+    border-width: 2px;
+    border-style: dashed;
+    border-color: #4e7fb1;
+    border-radius: 10px;
+    position: relative;
+    margin: 5% 25px;
+    box-shadow: 0 0 25px #6a6d7e;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height: 250px;
+/*    How to fit image in div take from https://www.geeksforgeeks.org/how-to-auto-resize-an-image-to-fit-a-div-container-using-css/*/
+    object-fit: cover;
+/*    End content from https://www.geeksforgeeks.org/how-to-auto-resize-an-image-to-fit-a-div-container-using-css/*/
+    
+    object-position: top;
+    border-bottom: 10px solid #5e79eb;
+}
+
+.cardTitle {
+    margin: 10px 0;
+    font-size: 25px;
+/*    How to make font bold taken from https://www.peachpit.com/articles/article.aspx?p=672150&seqNum=5*/
+    font-weight: bold;
+/*End content from https://www.peachpit.com/articles/article.aspx?p=672150&seqNum=5*/
+}
+
+.cardParagraph {
+    font-size: 20px;
+    margin-bottom: 25px;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.cardLink {
+    font-size: 22px;
+    font-weight: bold;
+/*How to underline text taken from https://www.w3schools.com/cssref/pr_text_text-decoration.asp*/
+    text-decoration: underline;
+/*End content from https://www.w3schools.com/cssref/pr_text_text-decoration.asp*/
+    color: #5e79eb;
+    position: relative;    
+}
+
+#firstParagraph{
+    margin-bottom: 68px;
+}
+
+#secondParagraph{
+    margin-bottom: 48px;
+}
+#thirdParagraph {
+    margin-bottom: 5px;
+}
+
+@keyframes moveCards {
+    from {top: -670px;}
+    to {top: 0px;}
+}

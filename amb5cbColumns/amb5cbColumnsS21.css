@@ -1,0 +1,91 @@
+#mainWrapper {
+    width: 1122px;
+    border: 9px solid #C5C6C7;
+    border-radius: 50px;
+    padding: 10px;
+    margin-top: 150px;
+    background-color: #494c59;
+    background-color: #0B0C10;
+
+/*    How to move object in taken from https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_animation-fill-mode3*/
+    position: relative;
+    animation: mymove 2s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+/*End content from https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_animation-fill-mode3*/
+}
+
+#header {
+    text-align: center;
+}
+
+/*Three Column formatting*/
+#leftColumn {
+    width: 244px;
+}
+#rowWrapper {
+    width: 435px;
+    margin: 21px;
+}
+#rightColumn {
+    width: 209px;
+}
+.column {
+    float: left;
+}
+
+/*Middle column rows*/
+#middleColumnTopRow {
+    width: 376px;
+    height: 211px;
+    padding: 22px;
+    margin-bottom: 26px;
+}
+#middleColumnBottomRow {
+    width: 376px;
+    height: 130px;
+    padding: 22px;
+}
+
+.leftAndRightColumn {
+    padding: 21px;
+    margin: 21px;
+    height: 425px;
+}
+
+/*All boxes*/
+.leftAndRightColumn, #middleColumnTopRow, #middleColumnBottomRow {
+    background-color: #323c46;
+    border-radius: 50px;
+    border: 6px solid #C5C6C7;
+}
+
+#updatedDate {
+    text-align: center;
+    
+    position: relative;
+    animation: moveBottomTitle 2s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+}
+
+.list li{
+    text-align: left;
+}
+.list ul li {
+    font-size: 0.82em;
+}
+
+/*ADDED THIS CSS SLIDE IN ANIMATION FOR A SHOT AT BONUS POINTS
+
+/*How to move object taken from https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_animation-fill-mode3*/
+@keyframes mymove {
+  from {top: -850px; background-color: #0B0C10;}
+  to {top: 0px; background-color: #494c59;}
+}
+/*End content from https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_animation-fill-mode3*/
+
+@keyframes moveBottomTitle {
+  from {top: -850px;}
+  to {top: 0px;}
+}
